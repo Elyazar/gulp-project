@@ -1,0 +1,203 @@
+// === Faile-imports ===
+
+@import 'normalize.scss';
+
+// === / Faile-imports ===
+
+
+
+// === Common ===
+
+*{
+  box-sizing: border-box;
+}
+
+// === / Common ===
+
+
+
+// === Font-mixins ===
+
+@mixin font-lato {
+  font-family: 'Lato', sans-serif;
+}
+@mixin font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+// === / Font-mixins ===
+
+
+
+// === Color-mixins ===
+
+$color-title: #414141;
+$color-white: white;
+$color-paragraph: #6c6c6c;
+$color-header-button: linear-gradient(to right, #fe985b, #fe4fa7);
+$color-header-mask: #142729;
+
+// === / Color-mixins ===
+
+
+
+.section-outer{}
+.section-inner{
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+// === header ===
+
+.section-header{
+  color: $color-white;
+  background: url(../img/header/header-bg.png) no-repeat 50% 50%;
+  background-size: cover;
+  position: relative;
+
+  .section-inner{
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: $color-header-mask;
+    opacity: .45;
+    z-index: 5;
+  }
+  &-logo{
+    @include font-lato;
+
+    flex-shrink: 1;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 35px;
+  }
+  &-content{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+  &-wrapper{
+    margin: 0 auto;
+    &__title,
+    &__subtitle{
+      text-align: center;
+    }
+    &__title{
+      @include font-lato;
+
+      font-weight: bold;
+      font-size: 55px;
+      line-height: 60px;
+      margin-bottom: 16px;
+    }
+    &__subtitle{
+      @include font-montserrat;
+
+      font-size: 18px;
+      line-height: 32px;
+      width: 65%;
+      margin: 0 auto 50px;
+    }
+    &__form{
+      display: flex;
+
+      &-input{
+        flex: 1;
+        padding-right: 40px;
+
+        input{
+          @include font-montserrat;
+
+          font-size: 16px;
+          color: $color-white;
+          border: none;
+          background: rgba(255, 255, 255, .25);
+          margin: 0;
+          padding: 16px 20px;
+          outline: none;
+          border-radius: 4px;
+          width: 100%;
+
+          &::placeholder{
+            @include font-lato;
+            color: $color-white;
+            font-size: 16px;
+          }
+        }
+      }
+      &-button{
+        button{
+          @include font-montserrat;
+
+          color: $color-white;
+          background: $color-header-button;
+          border: none;
+          font-size: 18px;
+          margin: 0;
+          padding: 0;
+          padding: 15px 50px;
+          outline: none;
+          border-radius: 4px;
+
+          &:hover{
+            cursor: pointer;
+            box-shadow: 0px 0px 15px 0px #fe757f;
+          }
+        }
+      }
+    }
+  }
+}
+
+// === / header ===
+
+
+
+// === promo ===
+
+
+
+// === / promo ===
+
+
+
+// === founder ===
+
+
+
+// === / founder ===
+
+
+
+// === plans ===
+
+
+
+// === / plans ===
+
+
+
+// === free ===
+
+
+
+// === / free ===
+
+
+
+// === footer ===
+
+
+
+// === / footer ===

@@ -1,0 +1,25 @@
+{
+  "name": "gulp-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elyazar/gulp-project.git"
+  },
+  "author": "Elyzar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elyazar/gulp-project/issues"
+  },
+  "homepage": "https://github.com/Elyazar/gulp-project#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.0.2"
+  }
+}
